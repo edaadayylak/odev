@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 28 May 2025, 08:03:56
+-- Üretim Zamanı: 28 May 2025, 21:35:46
 -- Sunucu sürümü: 9.1.0
 -- PHP Sürümü: 8.3.14
 
@@ -94,15 +94,14 @@ CREATE TABLE IF NOT EXISTS `randevular` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `islem_id` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Tablo döküm verisi `randevular`
 --
 
 INSERT INTO `randevular` (`id`, `adsoyad`, `telefon`, `email`, `cinsiyet`, `tarih`, `saat`, `islem`, `notlar`, `durum`, `created_at`, `islem_id`) VALUES
-(1, 'Ayşe Yılmaz', '5551234567', 'ayse@email.com', 'Kadın', '2025-05-27', '10:00:00', 'Saç Kesimi', 'Kısa kesim tercih ediyor', 'Onaylandı', '2025-05-27 14:25:59', ''),
-(2, 'Mehmet Demir', '5559876543', 'mehmet@email.com', 'Erkek', '2025-05-28', '14:00:00', 'Saç Kesimi', 'Sakal tıraşı da istiyor', 'Onaylandı', '2025-05-27 14:25:59', '');
+(4, 'edanur ', '5555555555', 'user@example.com', 'Erkek', '2025-05-30', '09:30:00', 'Fön', NULL, 'Bekliyor', '2025-05-28 21:07:56', '3');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
